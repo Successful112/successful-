@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.all{
+    overflow: hidden;
+    padding: 30px;
+}
+.text{
+    width: 100%;
+}
+.text p{
+    width: 500px;
+    padding-top: 26px;
+}
+.heritage{
+    color: #868e96;
+}
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 30px;
+    gap: 20PX;
+}
+.image img{
+    width: 100%;
+}
+.image{
+    padding-bottom: 60px;
+}
+.tersr{
+    padding-top: 20px;
+}
+.backg-image{
+    background: url(icons/carl-image2.jpg) no-repeat;
+    background-size: cover;
+    height: 485px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+}
+.backg-image2{
+    background: url(icons/carl-image.jpg);
+    background-size: cover;
+    height: 485px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+}
+.backg-image2-h4,
+.backg-image-h4{
+        font-size: 45px;
+}
+@media (min-width:200px) and (max-width:767px){
+    .text p{
+        width: 100%;
+    }
+    .grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .backg-image{
+        height: 208px;
+        padding: 20px;
+    }
+    .backg-image2{
+        height: 208px;
+        padding: 20px;
+    }
+    .backg-image2-h4,
+    .backg-image-h4{
+        font-size: 0;
+    }
+    .backg-image-p,
+    .backg-image2-p{
+        font-size: 0%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .text p{
+        width: 60%;
+    }.backg-image{
+        height: 275px;
+    }
+    .backg-image2{
+        height: 305px; 
+    }
+}
